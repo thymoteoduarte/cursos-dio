@@ -1,0 +1,7 @@
+Portugol Studio - link p/ download
+http://lite.acad.univali.br/portugol/
+https://github.com/UNIVALI-LITE/Portugol-Studio/releases
+
+Portugol Web
+https://portugol-webstudio.cubos.io/ide
+
