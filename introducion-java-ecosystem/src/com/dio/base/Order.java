@@ -1,19 +1,37 @@
 package com.dio.base;
+/**
+ * @author Thymoteo Duarte
+ * @version 1.0.0
+ * @since Release 1.0.0
+ */
 
 public class Order {
 	
+	// esse comentário de linha	para informar que esse atributos representam as caracteristicas dos itens
 	private final String code;
 	private final int totalValue;
 	private String[] itens;
 	
+	/**
+	 * Construtor de classe
+	 * 
+	 * @param code 			Código do pedido
+	 * @param totalValue 	Valor total do pedido
+	 */
 	public Order(String code, int totalValue) {
 		this.code = code;
 		this.totalValue = totalValue;
 	}
 	
+	/**
+	 * Calcula o valor total de acordo com o valor do pedido. Se o valor for maior que 100,00 uma 
+	 * taxa será cobrada.
+	 *  
+	 * @return Valor total do pedido com as taxas
+	 */
 	public int calculateFee() {
 		if(this.totalValue>100) {
-			return totalValue*1;
+			return totalValue*2;
 		}else {
 			return totalValue;
 		}
