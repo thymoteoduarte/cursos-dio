@@ -4,6 +4,7 @@ public class Order {
 	
 	private final String code;
 	private final int totalValue;
+	private String[] itens;
 	
 	public Order(String code, int totalValue) {
 		this.code = code;
@@ -29,6 +30,32 @@ public class Order {
 		default:
 			return totalValue;
 		}
+	}
+	
+	public void printItens() {
+		int contador = 0;
+		while(contador<itens.length) {
+			System.out.println(itens[contador]);
+			contador++;
+		}
+	}
+	
+	public void printItensDoWhile() {
+		int contador = 0;
+		do{
+			System.out.println(itens[contador]);
+			contador++;
+		}while(contador<itens.length);
+	}
+	
+	public void printItensFor() {
+		for(int i = 0; i < itens.length; i++)
+			System.out.println(itens[i]);
+	}
+	
+	public void printItensFor2() {
+		for(String i : itens)
+			System.out.println(i);
 	}
 	
 	public String toString() {
