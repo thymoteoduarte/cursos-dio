@@ -12,6 +12,7 @@ public class MainArea {
 		System.out.println("1-Quadrado");
 		System.out.println("2-Retângulo");
 		System.out.println("3-Trapézio");
+		System.out.println("4-Losango");
 		System.out.println("OPÇÃO: ");
 		opcao = scan.nextInt();
 		System.out.println("=============================================");
@@ -39,6 +40,14 @@ public class MainArea {
 			System.out.println("Tamanho da altura: ");
 			altura = scan.nextInt();
 			CalcularArea.areaQuadrilatero(num1, num2, altura);
+			break;
+		}
+		case 4: {
+			System.out.println("Tamanho do lado 1: ");
+			float x = scan.nextInt();
+			System.out.println("Tamanho do lado 2: ");
+			float y = scan.nextInt();
+			CalcularArea.areaQuadrilatero(x, y);
 			break;
 		}
 		default:
