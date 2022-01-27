@@ -9,7 +9,7 @@ public interface IConta {
 	
 	public void transferir(double valor, Conta contaDestino);
 	
-	public void imprimirExtrato();
+	public void imprimirExtrato(Banco banco);
 
 	public void imprimirRecibo(double valor);
 	
